@@ -1,0 +1,110 @@
+.navbar{
+    background-color: #F9AA33 !important;
+}
+
+.nav-link{
+    color:white !important;
+}
+
+.fa-shopping-cart{
+    font-size: 20px;
+    
+}
+
+.fa-user{
+    font-size: 20px;
+   
+}
+
+.mainCard{
+  margin-top:30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card1, .card2, .card3 {
+    display: flex;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 2px 4px 5px grey;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+    
+}
+
+
+.fa-truck, .fa-phone, .fa-thumbs-up{
+    font-size: 50px !important;
+    margin-right: 10px;
+    color:#F9AA33;
+}
+
+.deals{
+    margin-top: 30px;
+}
+
+
+
+.card{
+    width:250px;
+    height: auto !important;
+    margin-bottom: 50px;
+}
+
+.card-text{
+    font-weight: bold;
+}
+
+.btn-primary{
+    width:100%;
+    background-color: #F9AA33 ;
+    border-color: #F9AA33;
+}
+
+.btn-primary:hover{
+    background-color: #355955 !important;
+}
+
+.heading{
+    text-align: center;
+    font-weight: bold;
+    color: #355955;
+    margin:20px;
+    border-bottom: 3px #F9AA33;
+}
+
+.heading > h1{
+    text-shadow: 2px 2px 3px black;
+}
+
+.featrueProducts{
+    margin-top: 30px;
+}
+
+.footer{
+    width: 100%;
+    background-color: #F9AA33;
+    height: 80px;
+}
+
+.footer > div{
+    text-align: center;
+}
+
+.footer > h4{
+    color:#355955;
+    padding:25px;
+}
+
+@media screen and (max-width: 600px) {
+    .card1, .card2, .card3 { 
+      width: 100%;
+    }
+    .card{
+      width: 100%;
+    }
+  }
+  
