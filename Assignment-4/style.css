@@ -1,9 +1,19 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+  }
+  
 .navbar{
     background-color: #F9AA33 !important;
 }
 
 .nav-link{
     color:white !important;
+}
+
+
+.nav-link:hover{
+    color: #355955 !important;
+    
 }
 
 .fa-shopping-cart{
@@ -42,7 +52,7 @@
     color:#F9AA33;
 }
 
-.deals{
+.newArrivals{
     margin-top: 30px;
 }
 
