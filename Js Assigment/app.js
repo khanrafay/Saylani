@@ -82,13 +82,20 @@
 
 // document.write("Variable name must only begin with letter $ or _ \n");
 
+document.write("\n");
+document.write("\n");
+document.write("\n");
 
-//Chapter 5 
+document.write("Chaper 5 \n") 
+
+document.write("\n");
+document.write("\n");
+document.write("\n");
 
 var numberOne = 10;
 var numberTwo = 8;
 
-document.write("Sum of " + numberOne + " and " + numberTwo + " is " + numberOne+numberTwo + "\n");
+document.write("\n Sum of " + numberOne + " and " + numberTwo + " is " + numberOne+numberTwo + "\n");
 document.write("Subtract of " + numberOne + " and " + numberTwo + " is " + numberOne-numberTwo + "\n");
 document.write("Multiplication of " + numberOne + " and " + numberTwo + " is " + numberOne*numberTwo + "\n");
 document.write("Division of " + numberOne + " and " + numberTwo + " is " + numberOne/numberTwo + "\n");
@@ -134,3 +141,145 @@ var convertFahrenheritToCelcius = (fahrenheitTemperature - 32) * (5/9);
 
 document.write("\n " + celciusTemperature + "C is " + convertCelciusToFarenheit + "\n");
 document.write("\n " + fahrenheitTemperature + "F is " + convertFahrenheritToCelcius + "\n");
+
+
+var item1 = 1000;
+var item2 = 600;
+var item1Quantity = 3;
+var item2Quantity = 6;
+var shippingCharges = 90;
+
+document.write("\n");
+document.write("Price of item 1 is " + item1);
+document.write("\n");
+document.write("Quantity of item 1 is " + item1Quantity);
+document.write("\n");
+document.write("Price of item 2 is " + item2);
+document.write("\n");
+document.write("Quantity of item 2 is " + item2Quantity);
+document.write("\n");
+document.write("Shipping Charges " + shippingCharges);
+document.write("\n");
+document.write("\n");
+document.write("Total cost of your order is 2750");
+document.write("\n");
+document.write("\n");
+
+
+
+
+
+var totalMarks = 980;
+var marksObtained = 800;
+
+document.write("\n");
+document.write("Mark Sheet");
+document.write("Total Marks: " + totalMarks);
+document.write("\n");
+document.write("Marks Obtained " + marksObtained);
+document.write("\n");
+document.write("Percentage: " + (totalMarks/marksObtained) * 100);
+document.write("\n");
+document.write("\n");
+
+
+
+var dollarRate = 104.80;
+var riyalRate = 28;
+var dollarQuantity = 10;
+var riyalQuantity = 25;
+
+var dollarIntoPkr = dollarRate * dollarQuantity;
+var riyalIntoPkr = riyalRate * riyalQuantity;
+
+document.write("\n");
+document.write("Currency in PKR");
+document.write("\n");
+document.write("\n");
+
+document.write("Total currency in PKR: " + dollarIntoPkr + riyalIntoPkr);
+
+document.write("\n");
+document.write("\n");
+document.write("\n");
+
+
+var someNumber = 2;
+var someNumberResult = (someNumber + 5 * 10) / 2;
+
+
+
+var currentYear = 2020;
+var birthYear = 1995;
+var myAge = 2020-1995;
+
+document.write("\n");
+document.write("\n");
+document.write("Age Calculator");
+
+document.write("\n");
+document.write("Current Year: " + currentYear );
+document.write("\n");
+document.write("Birth Year: " + birthYear);
+document.write("\n");
+document.write("Your age: " + myAge);
+
+document.write("\n");
+document.write("\n");
+document.write("\n");
+
+
+var radius = 20;
+document.write("\n");
+document.write("Radius of a Circle is " + radius);
+document.write("\n");
+document.write("The circumference is: "  + 2 * 3.142 * radius);
+document.write("\n");
+document.write("The area is: " + 3.142 * (radius*radius));
+
+document.write("\n");
+document.write("\n");
+document.write("\n");
+
+
+var favoriteSnack = "kurkure";
+var myAge = 24;
+var maximumAge = 70;
+var amountPerday = 1;
+
+document.write("\n");
+document.write("\n");
+document.write("The Lifetime Supply Calculator");
+document.write("\n");
+document.write("\n");
+document.write("\n");
+
+document.write("Favorite Snack: " + favoriteSnack);
+document.write("\n");
+document.write("Current Age: " + myAge);
+document.write("\n");
+document.write("Estimated Maximum: " + maximumAge);
+document.write("\n");
+document.write("Amout of snacks per day: " + amountPerday);
+document.write("\n");
+document.writeln("\n You will need " + (maximumAge - myAge) * amountPerday + " " + favoriteSnack + " to last you until the ripe old age of " + maximumAge );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
