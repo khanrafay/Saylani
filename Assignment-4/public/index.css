@@ -1,5 +1,7 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: #efefef;
   }
   
 .navbar{
@@ -36,7 +38,7 @@ body {
 .card1, .card2, .card3 {
     display: flex;
     width: 300px;
-    height: 100px;
+    height: 150px;
     background-color: white;
     box-shadow: 2px 4px 5px grey;
     justify-content: center;
@@ -50,10 +52,11 @@ body {
     font-size: 50px !important;
     margin-right: 10px;
     color:#F9AA33;
+    
 }
 
 .newArrivals{
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 
@@ -68,11 +71,22 @@ body {
     font-weight: bold;
 }
 
+.card-title{
+    text-align: center;
+    font-size: 13px;
+}
+
+.card-text{
+  text-align: center;
+
+}
+
 .btn-primary{
     width:100%;
     background-color: #F9AA33 ;
     border-color: #F9AA33;
 }
+
 
 .btn-primary:hover{
     background-color: #355955 !important;
@@ -94,10 +108,16 @@ body {
     margin-top: 30px;
 }
 
+.viewMore > button{
+    background-color: #355955 !important;
+    border-color: #355955 !important;
+}
+
 .footer{
+    margin-top: 50px;
     width: 100%;
     background-color: #F9AA33;
-    height: 80px;
+    height: 212px;
 }
 
 .footer > div{
@@ -107,6 +127,35 @@ body {
 .footer > h4{
     color:#355955;
     padding:25px;
+    
+}
+
+.footerLinks, .footerSocial{
+    margin-top: 50px;
+}
+
+.footerLinks > li{
+     list-style: none;
+     font-size: 15px;
+     margin-top: 7px;
+     color:#355955;
+}
+
+.footerSocial > li{
+    list-style: none;
+    display: inline;
+    margin:10px;
+    font-size: 20px;
+        
+}
+
+.footerLinks a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer p {
+    font-size: 13px;
 }
 
 @media screen and (max-width: 600px) {
@@ -115,6 +164,14 @@ body {
     }
     .card{
       width: 100%;
+    }
+    .footer{
+        height: 513px;
+    }
+    .viewMore{
+        width: 100%;
+        margin-left: 35px;
+        margin-right: 35px;
     }
   }
   
