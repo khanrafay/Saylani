@@ -1,10 +1,10 @@
 // Chapter 1
 
-//Task 1 
+//Task 1
 
 // alert("Hello How are you?");
 
-////Task 2 
+////Task 2
 
 // alert("Error! Please enter a valid password!");
 
@@ -25,7 +25,7 @@
 
 // Chapter 2
 
-//Task 1 
+//Task 1
 
 // var username;
 
@@ -150,7 +150,7 @@
 
 //  document.write('<br>');
 
- 
+
 // //Task 3
 
 // var myVariable;
@@ -358,20 +358,98 @@
 //Chapter 6-9
 
 
-//Task 1
+// //Task 1
+
+// var a = 10;
+// document.write("Result: <br>");
+// document.write("The value of a is: " + a);
+
+// document.write("<br>-----------------------------<br>");
+// document.write("The value of ++a is: " + ++a);
+// document.write("<br>Now the value of a is: " + a + "<br>");
+
+// document.write("<br>The value of a++ is : " + a++ + "<br>");
+// document.write("<br>Now the value of a is: " + a + "<br>");
+
+// document.write("<br>The value of --a is: " + --a + "<br>");
+// document.write("<br>Now the value of a is: " + a + "<br>");
+
+// document.write("<br>The value of a-- is: " + a-- + "<br>");
+// document.write("<br>Now the value of a is: " + a + "<br>");
+
+
+// // Task 2
+
+// var a =2, b = 1;
+// document.write("<br> a = " + a + "<br>");
+// document.write("<br> b = " + b + "<br>");
+
+// // document.write("<br> --a  = " + --a + "<br>");
+// // document.write("<br> --a - --b = " + (--a - --b) + "<br>");
+// // document.write("<br> --a - --b + ++b = "  + (--a - --b + ++b) + "<br>");
+// // document.write("<br> --a - --b + ++b + b-- =  " + (--a - --b + ++b + b--) + "<br>");
+
+// var result = --a - --b + ++b + b--;
+// document.write("<br> result = " + result + "<br>");
 
 
 
+// //Task 3
+
+// var userName = prompt("Enter your name");
+
+// document.write("Hello " + userName);
+
+// //Task 4
+
+// // It was empty
+
+// //Task 5
+// document.write("<br>")
+// document.write("<br>")
+// document.write("<br>")
+// var userChoice = +prompt("Enter the number to show it's table");
+// console.log(userChoice);
+
+// if(userChoice != 0){
+//     for(var i= 1; i <= 10 ; i++){
+//         document.write(userChoice + " X " + i + " = " + userChoice*i);
+//         document.write("<br>");
+//     }
+// }else{
+//     for(var i= 0; i <= 10 ; i++){
+//         document.write("5  X " + i + " = " + 5*i);
+//         document.write("<br>");
+//     }
+// }
+
+// document.write("<br>")
+// document.write("<br>")
+// document.write("<br>")
+
+//Task 6
+
+// var maths,english,urdu;
+// var totalMarks = 120;
+// maths = 80;
+// english = 90;
+// urdu = 77;
+// var total = maths + english + urdu;
+// var mathPercentage = (maths/totalMarks) * 100;
+// var englishPercentage = (english/totalMarks) * 100;
+// var urduPercentage = (urdu/totalMarks) * 100;
+
+// document.write("<br>");
+// document.write("<Table>"
+// +"<th>Subject</th><th>Total</th><th>Obtained</th><th>Percentage</th>"
+// +"<tr><td>Maths</td><td>"+ totalMarks + "</td> <td>"+maths+"</td><td>"+mathPercentage+"</td></tr>"
+// +"<tr><td>English</td><td>"+ totalMarks + "</td> <td>"+english+"</td><td>"+englishPercentage+"</td></tr>"
+// +"<tr><td>Urdu</td><td>"+ totalMarks + "</td> <td>"+urdu+"</td><td>"+urduPercentage+"</td></tr>"
+// +"</Table>");
 
 
 
-
-
-
-
-
-
-
+//Chapter 9-11
 
 
 
