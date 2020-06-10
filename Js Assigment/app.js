@@ -750,3 +750,15 @@
 // }
 
 // Chap 14-16
+
+var studentNames = [];
+var studentNames2 = new Array();
+var stringArray = ["hello","bye"];
+var numberArray = [1,2,3];
+var booleanArray = [true,false];
+var mixedArray = ["hello",2,4,"bye",1];
+var degrees = ["SSC","HSC","BCS","BS","BCOM","MS","M.Phil.","PhD"];
+
+document.write("<h1>Qualifications</h1>");
+document.write("<ol>"
++degrees.map(degree => {"<li>"+"hello"+"</li>"})+"</ol>")
