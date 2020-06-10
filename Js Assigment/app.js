@@ -670,3 +670,21 @@
 
 // Chapter 12-13
 
+//Task 1 
+
+
+
+
+
+// Task 2
+
+var firstNumber = +prompt("Enter the first number");
+var secondNumber = +prompt("Enter the second number");
+
+if(firstNumber === secondNumber){
+    document.write("Both are equal");
+}else if(firstNumber > secondNumber){
+    document.write("Larger number: "+ firstNumber)
+}else{
+    document.write("Larger Number: "+ secondNumber):
+}
