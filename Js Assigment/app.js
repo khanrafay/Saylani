@@ -1039,13 +1039,60 @@
 
 // Task 7
 
-var sweets = ["cake","apple pie", "cookie", "chips", "patties"];
+// var sweets = ["cake", "apple pie", "cookie", "chips", "patties"];
 
-var ask = prompt("Welcome to Fy bakery...What do you want to order sir/ma'am?");
+// var ask = prompt("Welcome to Fy bakery...What do you want to order sir/ma'am?");
 
-var findSweet = sweets.find(sweet => sweet == ask);
-var findSweetIndex = sweets.findIndex(sweet => sweet === ask);
-console.log(findSweetIndex);
-console.log(findSweet);
- if(findIt != undefined)
-document.write(findIt + " is available at index ");
+// //var findSweet = sweets.find(sweet => sweet == ask);
+// var findSweetIndex = sweets.findIndex(sweet => sweet === ask);
+// console.log(findSweetIndex);
+// //console.log(findSweet);
+// if (findSweetIndex == -1)
+//     document.write("Not available");
+// else
+//     document.write(ask + " is available at index " + findSweetIndex + " in our bakery");
+
+
+// Task 8
+
+// var A = [24, 53, 78, 91, 12];
+// var largest = 0;
+
+// for (var i = 0; i < A.length - 1; i++) {
+   
+//         if(A[i] > largest){
+//              largest = A[i]
+
+        
+//     }
+// }
+
+// document.write("Largest Number" + largest)
+
+
+// Task 9
+
+// var A = [24, 53, 78, 91, 12];
+// var smallest = 101;
+// for (var i = 0; i < A.length - 1; i++) {
+
+//         if(A[i] < smallest){
+//              smallest = A[i]
+
+//     }
+// }
+
+// document.write("Smallest Number" + smallest)
+
+
+// Task 10
+
+// for(var i=5; i<105; i= i+5)
+// {
+//     document.write(" " + i + " ");
+// }
+
+
+
+// Chapter 21-25
+
