@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .calculator {
+            width: 20%;
+            height: 600px;
+            border: 1px solid black;
+            background-color: coral;
+            text-align: center;
+        }
+
+        .screen {
+            text-align: center;
+
+        }
+
+        .firstScreen {
+            background-color: white;
+            width: 98%;
+            height: 50px;
+            border: 1px solid black;
+        }
+
+        .secondScreen {
+            background-color: white;
+            width: 98%;
+            height: 50px;
+            border: 1px solid black;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .buttonsFirst {
+            margin-top: 40px;
+            margin-left: 20px;
+            margin-right: 20px;
+            display: flex;
+
+
+        }
+
+        .button {
+            background-color: white;
+            border: 1px solid black;
+            height: 70px;
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Calculator</h1>
+    <div class="calculator">
+        <div class="screens">
+            <div>
+                <input type="text" class="firstScreen" id="screen" />
+            </div>
+            <div class="buttonsFirst">
+                <button class="button" onclick="clearScreen()">
+                    C
+                </button>
+                <button class="button" onclick="buttonClicked('square')">
+                    <h3>x2</h3>
+                </button>
+                <button class="button" onclick="buttonClicked('%')">
+                    <h3>%</h3>
+                </button>
+                <button class="button" onclick="buttonClicked('sqrt')">
+                    <h3>√</h3>
+                </button>
+            </div>
+            <div class="buttonsFirst">
+                <button class="button" onclick="buttonClicked('7')">
+                    7
+                </button>
+                <button class="button" onclick="buttonClicked('8')">
+                    <h3>8</h3>
+                </button>
+                <button class="button" onclick="buttonClicked('9')">
+                    <h3>9</h3>
+                </button>
+                <button class="button" onclick="buttonClicked('*')">
+                    <h3>*</h3>
+                </button>
+            </div>
+            <div class="buttonsFirst">
+                <button class="button" onclick="buttonClicked('4')">
+                    <h3>4</h3>
+                </button>
+                <button class="button" onclick="buttonClicked('5')">
+                    <h3>5</h3>
+                </button>
+                <button class="button" onclick="buttonClicked('6')">
+                    <h3>6</h3>
+                </button>
+                <button class="button" onclick="buttonClicked('-')">
+                    <h3>-</h3>
+                </button>
+            </div>
+            <div class="buttonsFirst">
+                <button class="button" onclick="buttonClicked('1')">
+                    <h3>1</h3>
+                </button>
+                <button class="button" onclick="buttonClicked('2')">
+                    <h3>2</h3>
+                </button>
+                <button class="button" onclick="buttonClicked('3')">
+                    <h3>3</h3>
+                </button>
+                <button class="button" onclick="buttonClicked('+')">
+                    <h3>+</h3>
+                </button>
+            </div>
+            <div class="buttonsFirst">
+                <button class="button" onclick="buttonClicked('0')">
+                    <h3>0</h3>
+                </button>
+                <button class="button" onclick="buttonClicked('.')">
+                    <h3>.</h3>
+                </button>
+                <button class="button" onclick="getResult()">
+                    <h3>=</h3>
+                </button>
+                <button class="button" onclick="buttonClicked('/')">
+                    <h3>/</h3>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
