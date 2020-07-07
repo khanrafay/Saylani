@@ -670,7 +670,7 @@
 
 // Chapter 12-13
 
-//Task 1 
+//Task 1
 
 
 
@@ -998,7 +998,7 @@
 
 //Task 6
 
-//A 
+//A
 
 // document.write("<br>");
 // document.write("Counting: ")
@@ -1021,7 +1021,7 @@
 //         document.write(i + " ");
 // }
 
-// // D 
+// // D
 // document.write("<br>");
 // document.write("Odd ");
 // for (var i = 0; i < 21; i++) {
@@ -1039,13 +1039,673 @@
 
 // Task 7
 
-var sweets = ["cake","apple pie", "cookie", "chips", "patties"];
+// var sweets = ["cake", "apple pie", "cookie", "chips", "patties"];
 
-var ask = prompt("Welcome to Fy bakery...What do you want to order sir/ma'am?");
+// var ask = prompt("Welcome to Fy bakery...What do you want to order sir/ma'am?");
 
-var findSweet = sweets.find(sweet => sweet == ask);
-var findSweetIndex = sweets.findIndex(sweet => sweet === ask);
-console.log(findSweetIndex);
-console.log(findSweet);
- if(findIt != undefined)
-document.write(findIt + " is available at index ");
+// //var findSweet = sweets.find(sweet => sweet == ask);
+// var findSweetIndex = sweets.findIndex(sweet => sweet === ask);
+// console.log(findSweetIndex);
+// //console.log(findSweet);
+// if (findSweetIndex == -1)
+//     document.write("Not available");
+// else
+//     document.write(ask + " is available at index " + findSweetIndex + " in our bakery");
+
+
+// Task 8
+
+// var A = [24, 53, 78, 91, 12];
+// var largest = 0;
+
+// for (var i = 0; i < A.length - 1; i++) {
+
+//         if(A[i] > largest){
+//              largest = A[i]
+
+
+//     }
+// }
+
+// document.write("Largest Number" + largest)
+
+
+// Task 9
+
+// var A = [24, 53, 78, 91, 12];
+// var smallest = 101;
+// for (var i = 0; i < A.length - 1; i++) {
+
+//         if(A[i] < smallest){
+//              smallest = A[i]
+
+//     }
+// }
+
+// document.write("Smallest Number" + smallest)
+
+
+// Task 10
+
+// for(var i=5; i<105; i= i+5)
+// {
+//     document.write(" " + i + " ");
+// }
+
+
+
+// Chapter 21-25
+
+// Task 1
+
+// var firstName = prompt("Enter first name");
+// var lastName = prompt("Enter lastt name");
+// var fullName = firstName + " " + lastName;
+// alert("Hello " + fullName);\
+
+
+//Task 2
+
+// var favModel = prompt("Enter your fav mobile phone model");
+// document.write("My favourite phone is: "+ favModel);
+// document.write("Lenght of string: " + favModel.length)
+
+// Task 3
+
+// var strFind = "Pakistani";
+// var findWord = strFind.indexOf("n");
+// document.write("Index of n is: " + findWord);
+
+
+// Task 4
+
+// var strFind = "Hello World";
+// var findWord = strFind.lastIndexOf("l");
+// document.write("Index of n is: " + findWord);
+
+
+// Task 5
+
+// var strFind = "Pakistani";
+// var indexFind = strFind.split("");
+// console.log(indexFind.slice(3,4))
+
+// Task 6
+
+// var firstName = prompt("Enter first name");
+// var lastName = prompt("Enter lastt name");
+// var fullName = firstName.concat(" " + lastName);
+// alert("Hello " + fullName);
+
+// Task 7
+
+// var cityName = "Hyderabad";
+// var wordAdd = "Islam";
+// var newCityName = cityName.split("").slice(5,9);
+// var concatCityName = wordAdd.concat(newCityName.join(''));
+// document.write(concatCityName);
+
+
+// Task 8
+
+// var message = "Ali and Same are best friends. They play cricket and football together";
+// var newMessage = message.replace(/and/g,"&");
+// document.write(newMessage);
+
+// Task 9
+
+// var oldValue = "472";
+// var oldValueType = typeof oldValue;
+
+// document.write("Value: " + oldValue);
+// document.write("<br>");
+// document.write("Value Type: " + oldValueType);
+
+// var newValue = +oldValue;
+// var newValueType = typeof newValue;
+// document.write("<br>");
+// document.write("Value: " + newValue);
+// document.write("<br>");
+// document.write("Value Type: " + newValueType);
+
+// Task 10
+
+// var userInput = prompt("Enter anything");
+// document.write("User Input: " + userInput);
+// document.write("<br>");
+// document.write("UPPERCASE: " + userInput.toUpperCase())
+
+// Task 11
+
+// var userInput = prompt("Enter anything");
+
+// document.write("User Input: " + userInput);
+// document.write("<br>");
+// document.write("Title Case: " + userInput.split("").slice(0,1).join('').toUpperCase() + "" + userInput.split("").slice(1).join(""));
+
+// Task 12
+
+// var num = 35.36
+// var numToStr = num.toString();
+// document.write(numToStr.replace(".","") + "<br>")
+
+
+// Task 13
+
+// var userName = prompt("Enter username");
+// for(var i=0; i<userName.split("").length; i++){
+//     if(userName[i].charCodeAt(0) === 33 
+//     || userName[i].charCodeAt(0) === 44 
+//     || userName[i].charCodeAt(0) === 46 
+//     || userName[i].charCodeAt(0) === 64 )
+//     {
+//         alert("Please enter a valid username");
+//     }
+// }
+
+
+// Task 14
+
+// var bakery = ["cake", "apple pie", "cookie", "chips", "patties"];
+// var userChoice = prompt("Welcome to ABC bakery, what do you want to order sir/ma'am?");
+// var isAvailable = bakery.findIndex(item => item.toUpperCase() === userChoice.toUpperCase())
+
+// if(isAvailable === -1)
+//     document.write(userChoice + " is not available in the bakery");
+//     else{
+//         document.write(userChoice + " is available at index " + isAvailable + " in the bakery");
+//     }
+
+//Task 15
+
+// var userPassword = prompt("Enter the password");
+
+// var operatePassword = userPassword.split("");
+
+// if(operatePassword.length < 6){
+//    alert("Less than six characters");
+// }
+// if(operatePassword[0].charCodeAt(0) >= 48 && operatePassword[0].charCodeAt(0) <= 57 )
+// {
+//     alert("First word should not be a number");
+// }
+
+
+// Task 16
+
+// var university = "University of Karachi";
+// var arrUni = university.split("");
+
+// for (var i = 0; i < arrUni.length - 1; i++) {
+//     document.write(arrUni[i])
+//     document.write("<br>")
+
+// }
+
+// Task 17
+
+// var userInput = prompt("Enter any word");
+// var checkInput = userInput.split("");
+// for(var i=checkInput.length -1; i>=checkInput.length-1; i--){
+//     document.write(checkInput[i])
+// }
+
+
+// Task 18
+
+// var strMessage = "The quick brown fox jumps over the lazy dog";
+// var count = 0;
+
+// var arrMessage = strMessage.split(" ");
+// for(var i=0; i<arrMessage.length -1; i++){
+//     if(arrMessage[i].toUpperCase() === "THE"){
+//         count++;
+//     }
+// }
+// document.write("There are " + count + " occurence of the word [THE]");
+
+
+// Chapter 26-30
+
+// Task 1
+
+// var userNumber = +prompt("Enter the number");
+// document.write("Number: " + userNumber);
+// document.write("<br>")
+// document.write("Round off value: " + Math.round(userNumber));
+// document.write("<br>")
+// document.write("Floor off value: " + Math.floor(userNumber));
+// document.write("<br>")
+// document.write("Ceil off value: " + Math.ceil(userNumber));
+
+
+// Task 2
+// For negative number
+// var userNumber = +prompt("Enter the number");
+// document.write("Number: " + userNumber);
+// document.write("<br>")
+// document.write("Round off value: " + Math.round(userNumber));
+// document.write("<br>")
+// document.write("Floor off value: " + Math.floor(userNumber));
+// document.write("<br>")
+// document.write("Ceil off value: " + Math.ceil(userNumber));
+
+
+// Task 3
+
+// var value = -4;
+// var absValue = Math.abs(value);
+// document.write("Absolute value of " + value + " is: " + absValue);
+
+// Task 4
+
+// var randomDiceValue1 = Math.random();
+// document.write("Random dice value: " + Math.floor(randomDiceValue1 * 3));
+// document.write("<br>");
+// document.write("Random dice value: " + Math.floor(randomDiceValue1 * 2));
+
+
+// Task 5
+
+// var heads = Math.floor((Math.random()*2) + 1);
+
+// if(heads === 2){
+//     document.write(heads)
+//     document.write("<br>");
+//     document.write("Random coin value heads");
+// }else{
+//     document.write(heads)
+//     document.write("<br>");
+//     document.write("Random coin value tails");
+// }
+
+// Task 6
+
+// var randNumber = Math.floor(Math.random() * 100) + 1;
+// document.write("Value between 1 and 100: " + randNumber);
+
+// Task 7
+
+// var userWeight = prompt("What is your weight");
+
+// document.write("The weight of the user is: " + userWeight.split("k")[0] + " kilograms");
+
+
+// Task 8
+
+// var secretNumber = Math.floor(Math.random() * 10) + 1;
+// var userNumber = +prompt("Guess the number");
+
+// if(secretNumber === userNumber)
+// {
+//     document.write("The number matched");
+// }else{
+//     alert("Try Again!!!");
+// }
+
+// Chapter 31-34
+
+
+// Task 1 
+
+// var date = new Date();
+// document.write("Current Date and Time: " + date);
+
+// Task 2
+
+// var date = new Date();
+// var monthArray =  ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+// document.write("Current Month: " + monthArray[date.getMonth()])
+
+// Task 3
+
+// var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+// var d = new Date();
+// var dayName = days[d.getDay()].split("d")[0];
+// alert("Today is " + dayName);
+
+// Task 4
+
+// var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+// var d = new Date();
+// var dayName = days[d.getDay()];
+// if(dayName == "Saturday" || dayName == "Sunday"){
+//     document.write("It's fun day");
+// }
+
+// Task 5
+
+// var date = new Date();
+// console.log( date.getDate())
+// if(date.getDate() <= 15){
+//     document.write("First fifteen days of the month" + date.getDate());
+// }else{
+//     document.write("Last days of the month" +  date.getDate());
+// }
+
+
+// Task 6
+
+// var currentDate = new Date();
+// var elapsedSeconds = currentDate.getTime();
+
+// document.write("Current Date and Time: " + currentDate);
+// document.write("<br>")
+// document.write("Elapsed minutes since Januarary 1, 1970: "+ currentDate.getTime() / 60000);
+// document.write("<br>")
+// document.write("Elapsed miliseconds since Januarary 1, 1970: "+ currentDate.getTime());
+
+// Task 7
+
+// var currentTime = new Date();
+
+// if(currentTime.getHours() > 12){
+//     alert("Its AM");
+// }else{
+//     alert("It's PM")
+// }
+
+
+// Task 8
+
+// var date = new Date("December 31, 2020");
+// var laterDate = date;
+// document.write(laterDate);
+
+// Task 9
+
+// var ramadanDate = new Date("June 18, 2015");
+// var currentDate = new Date();
+// var msRamadan = ramadanDate.getTime();
+// var msCurrent = currentDate.getTime();
+// var msDiff =  msCurrent - msRamadan;
+// var dDiff = msDiff/(1000* 60 * 60 * 24);
+// dDiff = Math.floor(dDiff);
+// document.write(dDiff); 
+
+// Task 10
+
+// var refDate = new Date("December 05, 2015");
+// var begDate = new Date("Janurary 01, 2015");
+// var msRef = refDate.getTime();
+// var msBeg = begDate.getTime();
+// var msDiff = msRef - msBeg;
+// var dDiff = msDiff/(1000);
+// dDiff = Math.floor(dDiff);
+// document.write("On reference date " + refDate + " " + dDiff + " seconds had passed since beginning of 2015");
+
+// Task 11
+
+// var current = new Date();
+// document.write("Current time, " + current )
+
+// current.setHours(current.getHours() - 1)
+// document.write("<br>")
+// document.write("One hour ago: " + current);
+
+
+// Task 12
+
+// var current = new Date();
+// document.write("Current date is: " + current);
+// document.write("<br>");
+// current.setFullYear(current.getFullYear() - 100)
+// document.write("100 years back it was: " + current)
+
+// Task 13
+
+// var age = +prompt("What is your age");
+// document.write("your age is: "+ age);
+// var current = new Date();
+// var currentYear = current.getFullYear();
+// var diffYear = currentYear - age;
+// document.write("Your birth year is: "+ diffYear)
+
+// Task 14
+
+// var current = new Date();
+// var monthArray =  ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+// var numberPerUnit = 410;
+// var chargesPerUnit = 16;
+// var netAmount = numberPerUnit * chargesPerUnit;
+// var latePayment = 350;
+// var gross = netAmount + latePayment;
+
+// document.write("<h1>K-Electric Bill</h1>");
+// document.write("<br>");
+// document.write("Customer Name: Abdul Rafay Khan");
+// document.write("<br>");
+// document.write("Month: " + monthArray[current.getMonth()]);
+// document.write("<br>");
+// document.write("Number of Units: " + numberPerUnit);
+// document.write("<br>");
+// document.write("Charges per unit: " + chargesPerUnit);
+// document.write("<br>");
+// document.write("Net amount payable(With in due date): " + netAmount);
+// document.write("<br>");
+// document.write("Late payment surcharge: " + latePayment);
+// document.write("<br>");
+// document.write("Charges per unit: " + chargesPerUnit);
+// document.write("<br>");
+// document.write("Gross amount payable(after due date): " + gross);
+
+
+// Chapter 35-38
+
+
+// Task 1
+
+// function showDate(){
+//     var date = new Date();
+//     document.write(date);
+// }
+// showDate();
+
+
+// Task 2
+
+// var firstName = prompt("Enter your first name");
+// var lastName = prompt("Enter your last name");
+
+// showName(firstName,lastName);
+// function showName(fName,lName){
+//     document.write("Hello " + firstName + " " + lastName)
+// }
+
+// Task 3
+
+// var firstNumber = +prompt("Enter first number");
+// var secondNumber = +prompt("Enter second number");
+
+// document.write("Sum is " + sum(firstNumber,secondNumber));
+
+// function sum(fNum,sNum){
+//    return fNum + sNum
+// }
+
+
+// Task 4
+
+// var firstNumber = +prompt("Enter first number");
+// var secondNumber = +prompt("Enter second number");
+// var operator = prompt("Enter the desired operator");
+
+// document.write("The result is: " + calcu(firstNumber,secondNumber,operator))
+// function calcu(firstNumber, secondNumber, operator) {
+//     var result = 0;
+//     switch (operator) {
+//         case "+":
+//             result = firstNumber + secondNumber
+//             break;
+//         case "-":
+//             result = firstNumber - secondNumber
+//             break;
+//         case "/":
+//             result =  firstNumber / secondNumber
+//             break;
+//         case "*":
+//             result =  firstNumber * secondNumber
+//             break;
+//         case "%":
+//             result =   firstNumber % secondNumber
+//             break;
+//         default:
+//             break;
+//     }
+//     return result;
+// }
+
+
+// Task 5
+
+// var num = +prompt("Enter the number to square it");
+// document.write("Square of " + num + " is: " + squareNumber(num));
+// function squareNumber(number){
+//     return number*number;
+// }
+
+// Task 6
+
+// var facNumber = +prompt("Enter number to find it's factorial");
+// document.write("Factorial of " + facNumber + " is: " + findFactorial(facNumber));
+// function findFactorial(facNumber){
+//     var result = 1;
+//     for(var i=facNumber; i>0; i--){
+//         result = result * i;
+//         facNumber--;
+//     } 
+//     return result;
+// }
+
+// Task 7
+
+// var startNumber = +prompt("Enter start number");
+// var endtNumber = +prompt("Enter end number");
+// printNumbers(startNumber,endtNumber);
+// function printNumbers(startNumber, endNumber){
+//     for(var i=startNumber; i<=endNumber; i++){
+//         document.write(i + "<br>")
+//     }
+// }
+
+
+// Task 8
+
+// var base = +prompt("Enter the value of base");
+// var perpendicular = +prompt("Enter the value of perpendicular");
+
+// document.write("The hypontenuse of a right angle triangle is: " + calculateHypotenuse(base,perpendicular));
+
+// function calculateHypotenuse(base,perpendicular){
+
+//     return hypo = calculateSquare(base) + calculateSquare(perpendicular);
+
+
+//     function calculateSquare(value){
+//         return value*value;
+//     }
+// }
+
+
+// Task 9
+
+// var width = +prompt("Enter the value of width");
+// var height = +prompt("Enter the value of height");
+
+// document.write("Area of rectangle: " + calculateAreaOfRectangle(width,height));
+// document.write("<br>")
+// document.write("Area of rectangle: " + calculateAreaOfRectangle(7,9));
+
+// function calculateAreaOfRectangle(width,height){
+//     return width*height;
+// }
+
+// Task 10
+
+// var enteredString = prompt("Enter the string to check if it's palindrome");
+// document.write("Palindrome :" + checkPalindrome(enteredString));
+// function checkPalindrome(enteredString) {
+//     var result = false;
+//     var arrValue = enteredString.split("");
+//     for (var i = 0; i < arrValue.length - 1; i++) {
+//         for (var j = arrValue.length - 1; j >= 0; j--) {
+//             if (arrValue[i] === arrValue[j]) {
+//                 i++;
+//                 result = true;
+//             } else {
+//                 result = false
+//             }
+//         }
+//     }
+
+//     return result;
+
+// }
+
+// Task 11
+
+// var stringWord = "the quick brown box";
+
+// document.write("Change first case: " + ChangeCase(stringWord));
+
+// function ChangeCase(stringWord){
+//     var word = stringWord.split(" ");
+
+//     var result = [];
+
+//     for(var i=0; i<word.length; i++){
+//         //var arrWord = word[i].split("");
+//       result = result + " " + word[i].slice(0,1).toUpperCase() + "" + word[i].slice(1); 
+//     }
+//    return result;
+// }
+
+// Task 12
+
+// var strWord = "Web Development Tutorial Course ";
+// document.write("Longest word is: " + findLongest(strWord));
+// function findLongest(wordValue){
+//   var arrWord = wordValue.split(" ");
+//   var result = 0;
+
+//   for(var i=0; i<arrWord.length -1; i++){
+//     if(arrWord[i].length > arrWord[i+1].length){
+//           result = arrWord[i]
+//     }else{
+//           result = arrWord[i+1];
+//     }
+//   }
+//   return result;
+// }
+
+// Task 13
+
+// var strWord = "Web Development";
+// var strChar = "e";
+
+// document.write("In " + strWord + " the occurence of word " + strChar + " is: " + findWord(strWord,strChar) + " times");
+
+// function findWord(stringWord, charWord) {
+//   var arrString = strWord.split("");
+//   var count = 0;
+//   for (var i = 0; i < arrString.length ; i++) {
+//     if (arrString[i] == charWord) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+
+// Task 14
+
+// document.write("Circumference of a circle is: " + calcCircumference(50));
+// document.write("Area of a circle is: " + calcArea(50));
+
+// function calcCircumference(radiusValue) {
+//   return 2 * 3.142 * radiusValue;
+// }
+
+// function calcArea(radiusValue){
+//   return 3.142*radiusValue*radiusValue;
+// }
