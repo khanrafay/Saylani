@@ -1,0 +1,76 @@
+.circle{
+    width: 800px;
+    height: 800px;
+    border: 1px solid olive;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-image: linear-gradient(lightgreen, grey);
+
+}
+
+.stopwatch{
+    background-color:lightblue;
+    width:600px;
+    height: 200px;
+    margin:0 auto;
+    display: flex;
+    position: relative;
+    top: 35%;
+
+}
+
+.stopwatch div{
+    width: 200px;
+    height: 200px; 
+    display: inline-block;
+    font-size: 100px;
+    text-align: center;
+}
+
+.stopwatch div:hover{
+   
+  height: 210px !important;
+  transition: 0.1s;
+}
+
+#hoursBox{
+    background-color: lightcoral;
+}
+
+#minutesBox{
+    background-color: lightseagreen;
+}
+
+#secondsBox{
+    background-color: blueviolet;
+}
+
+#miliSecondsBox{
+    background-color: orange; 
+}
+
+.buttons{
+    position: relative;
+    top: 50%;
+    text-align: center;
+}
+
+.buttons button{
+    padding: 11px;
+    font-size: 30px;
+    border:none;
+    box-shadow: 2px 2px;
+    margin:5px;
+}
+
+.start{
+    background-color:#1da01d;
+}
+
+.stop{
+    background-color:#c51d1d;
+}
+
+.reset{
+    background-color: yellow;
+}
