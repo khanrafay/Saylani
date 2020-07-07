@@ -25,6 +25,7 @@
     display: inline-block;
     font-size: 100px;
     text-align: center;
+    box-shadow: 2px 2px grey;
 }
 
 .stopwatch div:hover{
@@ -59,8 +60,12 @@
     padding: 11px;
     font-size: 30px;
     border:none;
-    box-shadow: 2px 2px;
+    box-shadow: 2px 2px grey;
     margin:5px;
+}
+
+.buttons button:hover{
+  
 }
 
 .start{
@@ -72,5 +77,5 @@
 }
 
 .reset{
-    background-color: yellow;
+    background-color: #afaf09;
 }
