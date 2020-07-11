@@ -11,13 +11,21 @@
 <body>
     <div class="circle">
         <div class="stopwatch">
-            <div id="hoursBox">0</div>
-            <div id="minutesBox">0</div>
-            <div id="secondsBox">0</div>
-            <div id="miliSecondsBox">0</div>
+            <div id="hoursBox"><span id="hours">0</span> 
+                 <h5 style="font-size: 20px;">Hours</h5>
+            </div>
+            <div id="minutesBox"><span id="minutes">0</span>
+                <h5 style="font-size: 20px;">Minutes</h5>
+            </div>
+            <div id="secondsBox"><span id="seconds">0</span>
+                <h5 style="font-size: 20px;">Seconds</h5>
+            </div>
+            <div id="miliSecondsBox"><span id="miliSeconds">0</span>
+                <h5 style="font-size: 20px;">Milli Seconds</h5>
+            </div>
         </div>
         <div class="buttons">
-            <button class="start" onclick="start()">Start</button>
+            <button class="start" onclick="start()" id="startButton">Start</button>
             <button class="stop" onclick="stop()">Stop</button>
             <button class="reset" onclick="reset()">Reset</button>
         </div>
