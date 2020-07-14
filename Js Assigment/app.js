@@ -1738,18 +1738,18 @@
 
 // Task 3
 
-function ValueS(a,b,c){
-    var s;
-    s = (a+b+c)/2;
+// function ValueS(a,b,c){
+//     var s;
+//     s = (a+b+c)/2;
 
-   return area(s,a,b,c);
-}
+//    return area(s,a,b,c);
+// }
 
-function area(s,a,b,c){
-    var result;
+// function area(s,a,b,c){
+//     var result;
 
-    result = s*(s-a)*(s-b)*(s-c);
-    return result;
-}
+//     result = s*(s-a)*(s-b)*(s-c);
+//     return result;
+// }
 
-document.write("Area of a triangle is: " + ValueS(3,3,3));
+// document.write("Area of a triangle is: " + ValueS(3,3,3));
