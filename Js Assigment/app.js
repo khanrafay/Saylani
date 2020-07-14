@@ -1709,3 +1709,47 @@
 // function calcArea(radiusValue){
 //   return 3.142*radiusValue*radiusValue;
 // }
+
+
+// Chapter 38 - 42
+
+// Task 1
+
+// function powerOf(a,b){
+//     var result = 1;
+//     for(var i=1; i<= b; i++){
+//         result = result * a;
+//     }
+//    return result;
+// }
+// var a = +prompt("Enter the number");
+// var b = +prompt("Enter the power ");
+// document.write("Value is: " + a + " Power is: " + b + " Answer is: " + powerOf(a,b));
+
+// Task 2
+
+// var leapYearValue = +prompt("Enter year to know if it is leap year or not?");
+
+// if(leapYearValue%4 == 0){
+//     document.write("Yes it's a leap year");
+// }else{
+//     document.write("No. It's not a leap year")
+// }
+
+// Task 3
+
+function ValueS(a,b,c){
+    var s;
+    s = (a+b+c)/2;
+
+   return area(s,a,b,c);
+}
+
+function area(s,a,b,c){
+    var result;
+
+    result = s*(s-a)*(s-b)*(s-c);
+    return result;
+}
+
+document.write("Area of a triangle is: " + ValueS(3,3,3));
