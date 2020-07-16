@@ -1753,3 +1753,93 @@
 // }
 
 // document.write("Area of a triangle is: " + ValueS(3,3,3));
+
+
+// Task 4
+
+// var totalMarks = 300;
+// var sub1 = 89;
+// var sub2 = 77;
+// var sub3 = 55;
+// mainFunction();
+// function mainFunction() {
+//     document.write("Average of this person is: " + average(sub1, sub2, sub3));
+//     document.write("<br>")
+//     document.write("Pecentage of this person is: " + percentage(sub1 + sub2 + sub3));
+// }
+
+// function average(a, b, c) {
+//     return (a + b + c) / 3;
+// }
+
+// function percentage(val) {
+//     return (val / totalMarks) * 100;
+// }
+
+
+// Task 5
+
+// var str = "Hello how are you boy";
+// var arrStr = str.split(" ");
+
+// document.write(myIndexOf("you"));
+
+// function myIndexOf(val) {
+//     for (var i = 0; i < arrStr.length; i++) {
+//         if (arrStr[i] === val) {
+//             return i;
+//         }
+//     }
+// }
+
+
+// Task 6
+
+
+// var myLine = "Hello brother what's going on man? haven't heard from you...!!!";
+// deleteVowel(myLine);
+
+// function deleteVowel(sentence) {
+
+//     var arrSentence = sentence.split("");
+//     var copyArr = [];
+//     for (var i = 0; i < arrSentence.length; i++) {
+//         if (!(arrSentence[i].toLocaleLowerCase() === "a"
+//             || arrSentence[i].toLocaleLowerCase() === "e"
+//             || arrSentence[i].toLocaleLowerCase() === "i"
+//             || arrSentence[i].toLocaleLowerCase() === "o"
+//             || arrSentence[i].toLocaleLowerCase() === "u"
+//         )) {
+//             copyArr += arrSentence[i];
+//         }
+
+//     }
+
+//     document.write(copyArr);
+// }
+
+
+// Task 7
+
+var myLine = "Pleases read this application and give me gratuity";
+countVowel(myLine);
+function countVowel(sentence) {
+    var arrSentence = sentence.split("");
+    var suchOccurence = "";
+    var count = 0;
+
+    for (var i = 0; i < arrSentence.length; i++) {
+        switch (arrSentence[i] + "" + arrSentence[i + 1]) {
+            case "ea":
+                suchOccurence += " ea ";
+                count++;
+                break;
+            case "ui":
+                suchOccurence += " ui ";
+                count++;
+                break;
+        }
+
+    }
+    document.write("Such occurence: " + suchOccurence + " and the count is: " + count);
+}
