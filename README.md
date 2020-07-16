@@ -1,1 +1,1 @@
-- I am going to create html/css assignments in this repo
+- I am going to create html/css/javscript assignments in this repo
