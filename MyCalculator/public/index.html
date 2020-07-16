@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+        body{
+            text-align: center;
+
+        }
+        body .calculator{
+            text-align: center;
+            margin:0 auto;
+        }
         .calculator {
             width: 20%;
-            height: 600px;
+            height: 700px;
             border: 1px solid black;
-            background-color: coral;
-            text-align: center;
+            background-color: lightcoral;
+            
         }
 
         .screen {
@@ -24,6 +33,7 @@
             width: 98%;
             height: 50px;
             border: 1px solid black;
+            margin-top:10px;
         }
 
         .secondScreen {
@@ -64,7 +74,7 @@
                 <button class="button" onclick="clearScreen()">
                     C
                 </button>
-                <button class="button" onclick="buttonClicked('square')">
+                <button class="button" onclick="buttonClicked('²')">
                     <h3>x2</h3>
                 </button>
                 <button class="button" onclick="buttonClicked('%')">
