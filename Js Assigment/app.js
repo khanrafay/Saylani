@@ -1844,6 +1844,7 @@
 //     document.write("Such occurence: " + suchOccurence + " and the count is: " + count);
 // }
 
+<<<<<<< HEAD
 // Task 8
 
 // var distance = +prompt("Enter the distance between two cities in km");
@@ -1866,3 +1867,44 @@
 //     return distance * 100000
 // }
 
+=======
+
+// Task 9
+
+// var employees = [44, 55, 40];
+// var leftOf = 0;
+// var extraHour = 0;
+// for (var i = 0; i < employees.length ; i++) {
+//     if (employees[i] > 40) {
+//         leftOf = employees[i] - 40;
+//         extraHour = leftOf * 12;
+//         document.write("Employee " + i + " has worked " + employees[i] + " hours and his extra hours salary is: " + extraHour);
+//         document.write("<br>");
+//     } else {
+//         document.write("Employee " + i + " has worked " + employees[i] + " hours and he haven't done any extra hours");
+//     }
+// }
+
+//
+
+// Task 10
+
+// var amount = +prompt("Enter amount to withdraw");
+// var hundred = fifty = ten = 0;
+
+// while(amount > 0){
+//     if(amount > 100)
+//     {
+//         hundred++;
+//         amount -= 100;
+//     }else if(amount < 100 && amount > 49){
+//         fifty++;
+//         amount -= 50;
+//     }else if(amount > 9 && amount < 50){
+//         ten ++
+//         amount -= 10;
+//     }
+// }
+
+// document.write("You will have " + hundred + " hundreds " + fifty + " fifty " + ten + " ten currency notes");
+>>>>>>> accc3141cbefe8237aad238be79e6ae9b8f564cc
