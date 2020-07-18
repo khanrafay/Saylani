@@ -1821,25 +1821,48 @@
 
 // Task 7
 
-var myLine = "Pleases read this application and give me gratuity";
-countVowel(myLine);
-function countVowel(sentence) {
-    var arrSentence = sentence.split("");
-    var suchOccurence = "";
-    var count = 0;
+// var myLine = "Pleases read this application and give me gratuity";
+// countVowel(myLine);
+// function countVowel(sentence) {
+//     var arrSentence = sentence.split("");
+//     var suchOccurence = "";
+//     var count = 0;
 
-    for (var i = 0; i < arrSentence.length; i++) {
-        switch (arrSentence[i] + "" + arrSentence[i + 1]) {
-            case "ea":
-                suchOccurence += " ea ";
-                count++;
-                break;
-            case "ui":
-                suchOccurence += " ui ";
-                count++;
-                break;
-        }
+//     for (var i = 0; i < arrSentence.length; i++) {
+//         switch (arrSentence[i] + "" + arrSentence[i + 1]) {
+//             case "ea":
+//                 suchOccurence += " ea ";
+//                 count++;
+//                 break;
+//             case "ui":
+//                 suchOccurence += " ui ";
+//                 count++;
+//                 break;
+//         }
 
-    }
-    document.write("Such occurence: " + suchOccurence + " and the count is: " + count);
-}
+//     }
+//     document.write("Such occurence: " + suchOccurence + " and the count is: " + count);
+// }
+
+// Task 8
+
+// var distance = +prompt("Enter the distance between two cities in km");
+
+// document.write("Distance in kilometers is: " + distance + "<br>");
+// document.write("Distance in meters is: " + kmIntoMeters(distance) + "<br>");
+// document.write("Distance in Feet is: " + kmIntoFeet(distance) + "<br>");
+// document.write("Distance in Inches is: " + kmIntoInches(distance) + "<br>");
+// document.write("Distance in centimeters is: " + kmIntoCentimeters(distance) + "<br>");
+// function kmIntoMeters(distance) {
+//     return distance * 1000;
+// }
+// function kmIntoFeet(distance) {
+//     return distance * 3280;
+// }
+// function kmIntoInches(distance) {
+//     return distance * 39370;
+// }
+// function kmIntoCentimeters(distance) {
+//     return distance * 100000
+// }
+
