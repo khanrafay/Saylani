@@ -1844,7 +1844,6 @@
 //     document.write("Such occurence: " + suchOccurence + " and the count is: " + count);
 // }
 
-<<<<<<< HEAD
 // Task 8
 
 // var distance = +prompt("Enter the distance between two cities in km");
@@ -1867,7 +1866,6 @@
 //     return distance * 100000
 // }
 
-=======
 
 // Task 9
 
@@ -1907,4 +1905,42 @@
 // }
 
 // document.write("You will have " + hundred + " hundreds " + fifty + " fifty " + ten + " ten currency notes");
->>>>>>> accc3141cbefe8237aad238be79e6ae9b8f564cc
+
+// Chapter 43-48
+
+// Task 1 
+
+// function phoneClicked(){
+//     alert('Thanks for purchasing from us');
+// }
+
+// Task 2
+
+
+// var view = document.getElementById("studentTable");
+// var studentArray = [['0', 'Jhone', '10'],
+// ['1', 'Doe', '9'],
+// ['2', 'Marks', '10'],
+// ['3', 'James', '8']];
+
+
+// for (var i = 0; i < studentArray.length; i++) {
+//     document.getElementById("studentTable").innerHTML +=
+//         "<tr>" +
+//         "<td>" +
+//         " " + studentArray[i] + " " +
+//         "<button onclick=DeleteStudent(" + i + ")>Delete</button>" +
+//         "</td>" +
+//         "</tr>"
+// }
+
+// function DeleteStudent(indexValue) {
+//      studentArray = studentArray.slice(indexValue)
+//     console.log(studentArray);
+//     console.log(studentArray.length);
+
+// }
+
+// Task 3
+
+

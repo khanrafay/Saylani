@@ -1,0 +1,12 @@
+.imgPhone{
+    width: 300px;
+    height: 300px;
+}
+
+.phoneBox{
+    display: flex;
+}
+
+h5{
+    color:blue;
+}
