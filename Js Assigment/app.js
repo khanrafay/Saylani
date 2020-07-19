@@ -1931,7 +1931,7 @@
 
 // renderTable();
 // function renderTable() {
-//     if (studentArray.length > 1) {
+//     if (studentArray.length > 0) {
 //         for (var i = 0; i < studentArray.length; i++) {
 //             document.getElementById("studentTable").innerHTML +=
 //                 "<table>" +
@@ -1941,8 +1941,17 @@
 //                 "<th>Action</th>" +
 //                 "<tr>" +
 //                 "<td>" +
-//                 " " + studentArray[i] + " " +
+//                 studentArray[i].join(",").split(",")[0] +
+//                 "</td>" +
+//                 "<td>" +
+//                 studentArray[i].join(",").split(",")[1] +
+//                 "</td>" +
+//                 "<td>" +
+//                 studentArray[i].join(",").split(",")[2] +
+//                 "</td>" +
+//                 "<td>" +
 //                 "<button onclick=DeleteStudent(" + i + ")>Delete</button>" +
+//                 "</td>" +
 //                 "</td>" +
 //                 "</tr>" +
 //                 "</table>"
@@ -1989,4 +1998,6 @@
 // }
 
 
+// Chapter 49-52
 
+// Task 1
