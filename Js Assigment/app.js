@@ -1989,4 +1989,41 @@
 // }
 
 
+// Chapter 49-52
 
+// Task 1
+
+
+// function saveUser() {
+
+//     let firstName = document.getElementById("firstName");
+//     let lastName = document.getElementById("lastName");
+//     let email = document.getElementById("email");
+//     let dob = document.getElementById("dob");
+//     let gender = "";
+//     if (document.getElementById("male").checked)
+//         gender = "Male";
+//     else
+//         gender = "Female";
+
+
+
+//     let registeredBox = document.getElementById("registeredUsers");
+//     registeredBox.innerText += "<span>First Name: " + firstName.value + "</span>";
+//     registeredBox.innerText += "Last Name: " + lastName.value;
+//     registeredBox.innerText += "Email: " + email.value;
+//     registeredBox.innerText += "Gender: " + gender;
+//     registeredBox.innerText += "Date of Birth: " + dob.value;
+
+// }
+
+
+// Task 2
+
+function showContent(){
+    let content = document.getElementById("hiddenContent");
+    let readMore = document.getElementById("readMore");
+
+    content.style.visibility = 'visible';
+    readMore.style.visibility = 'hidden';
+}

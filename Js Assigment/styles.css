@@ -10,3 +10,32 @@
 h5{
     color:blue;
 }
+
+label{
+    width:20%;
+    
+}
+
+.container{
+    text-align: center;
+}
+label {
+    display: inline-block;
+    width: 155px;
+}
+
+
+.regForm{
+    text-align: center;
+    background-color: teal;
+    height: 800px;
+    padding:10px;
+    
+}
+.regForm div {
+    margin: 20px;
+}
+
+.btnSave{
+    width: 10%;
+}
