@@ -60,43 +60,142 @@
         <button onclick="decrease()">Decrease</button>
     </div> -->
 
-    <!-- <div>
-        <form>
-            <div class="form-group">
-                <label for="exampleInputEmail1">First Name</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter First Name">
+    <!-- <div class="regForm">
+        <h1>Sign up</h1>
+        <form action="javascript:void(0);">
+            <div>
+                <label>First Name </label>
+                <input type="text" id="firstName" placeholder="First name" />
             </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Last Name</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Last Name">
+            <div>
+                <label>Last Name</label>
+                <input type="text" id="lastName" placeholder="Last Name" />
             </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                    else.</small>
+            <div>
+                <label>Email</label>
+                <input type="text" id="email" placeholder="Email" />
             </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <div>
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Password" />
             </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Gender</label>
-                <input type="radio" class="form-control" id="exampleInputEmail1" placeholder="Male">
-                
+            <div>
+                <label>Gender</label>
+
+                Male<input type="radio" id="male" value="male" name="gender" value="male" checked />
+                Female<input type="radio" id="female" value="female" name="gender" value="female" />
+
             </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Date of Birth</label>
-                <input type="date" class="form-control" id="exampleInputEmail1" placeholder="Date of Birth">
+            <div>
+                <label>Date of Birth</label>
+                <input type="date" id="dob">
             </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <div>
+                <button class="btnSave" onclick="saveUser()">Save</button>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+
+
         </form>
+        <div>
+            <h1>Registered Users</h1>
+           <div id="registeredUsers">
+             
+           </div>
+        </div> 
+    </div>-->
+
+    <!-- <div class="content">
+        <p id="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci debitis tenetur voluptate excepturi
+            labore odit libero repellendus eum
+            deserunt saepe! Molestiae enim repellendus nam et, pariatur perspiciatis ratione quas laborum!
+        <p id="hiddenContent"></p>
+        <a id="readMore" onclick="showContent()" style="color: blue;">Read More...</a>
+        </p>    
     </div> -->
+
+    <!-- <div class="regForm">
+        <h1>Sign up</h1>
+        <form action="javascript:void(0);">
+            <div>
+                <label>First Name </label>
+                <input type="text" id="firstName" placeholder="First name" />
+            </div>
+            <div>
+                <label>Last Name</label>
+                <input type="text" id="lastName" placeholder="Last Name" />
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="text" id="email" placeholder="Email" />
+            </div>
+            <div>
+                <label>Gender</label>
+
+                Male<input type="radio" id="male" value="male" name="gender" value="male" checked />
+                Female<input type="radio" id="female" value="female" name="gender" value="female" />
+
+            </div>
+            <div>
+                <label>Date of Birth</label>
+                <input type="date" id="dob">
+            </div>
+            <div>
+                <button id="btnSave" class="btnSave" onclick="saveUser()">Save</button>
+            </div>
+
+
+        </form>
+        <div>
+            <h1>Registered Users</h1>
+            <table id="registeredUsers">
+
+            </table>
+        </div>
+    </div> -->
+
+
+    <!-- <div class="showImages">
+        <img class="imgWorld" src="Images/1.jpg" alt="" onclick="showModal(this)">
+        <img class="imgWorld" src="Images/2.jpg" alt="" onclick="showModal(this)">
+        <img class="imgWorld" src="Images/3.jpg" alt="" onclick="showModal(this)">
+        <img class="imgWorld" src="Images/5.jpg" alt="" onclick="showModal(this)">
+    </div>
+    <div id="modal" class="modal">
+        <span class="close" id="modal-close" onclick="onClosedImagModal()">&times;</span>
+        <img class="modal-content" id="modal-img" src="Images/1.jpg">
+    </div> -->
+
+    <!-- <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolorem,
+        architecto sed iusto quas sit quisquam doloribus omnis, minima consectetur tempore tenetur excepturi, nihil
+        autem explicabo deserunt officiis similique officia?</p>
+    <button onclick="increase()">+</button>
+    <button onclick="decrease()">-</button>
+ -->
+
+
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content">
+            <p class="render"> First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+    </div>
+
+    <div id="showMainContet">
+        
+    </div>
 
     <script src="app.js"></script>
 </body>
