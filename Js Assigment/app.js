@@ -2020,10 +2020,53 @@
 
 // Task 2
 
-function showContent(){
-    let content = document.getElementById("hiddenContent");
-    let readMore = document.getElementById("readMore");
+// function showContent() {
+//     //let content = document.getElementById("hiddenContent");
+//     let para = document.getElementById("para");
+//     let readMore = document.getElementById("readMore");
+//     let hiddenContent = document.getElementById("hiddenContent");
+//     let p = document.createElement("p");
+//     let spanText = document.createTextNode(`Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci debitis tenetur voluptate excepturi
+//     labore odit libero repellendus eum
+//     deserunt saepe! Molestiae enim repellendus nam et, pariatur perspiciatis ratione quas`);
+//     p.appendChild(spanText);
+//     hiddenContent.appendChild(p);
 
-    content.style.visibility = 'visible';
-    readMore.style.visibility = 'hidden';
+//     readMore.style.visibility = 'hidden';
+// }
+
+// Task 3
+let studentTable = [];
+let subTable = [];
+
+function addUser() {
+    console.log(studentTable);
+    let firstName = document.getElementById("firstName");
+    let lastName = document.getElementById("lastName");
+    let email = document.getElementById("email");
+    let dob = document.getElementById("dob");
+    let gender = "";
+    if (document.getElementById("male").checked)
+        gender = "Male";
+    else
+        gender = "Female";
+
+
+    addToArray(firstName.value, lastName.value, email.value, dob.value, gender);
+
+    // studentTable = document.getElementById("registeredUser");
+    // let tr = document.createElement("tr");
+    // let td = document.createElement("td");
+
 }
+
+function addToArray(firstName, lastName, email, dob, gender) {
+    subTable.push(firstName);
+    subTable.push(lastName);
+    subTable.push(email);
+    subTable.push(dob);
+    subTable.push(gender);
+    studentTable.push(subTable);
+    console.log(studentTable);
+}
+

@@ -93,19 +93,60 @@
         </div> 
     </div>-->
 
-    <div class="content">
-        <p>
+    <!-- <div class="content">
+        <p id="para">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci debitis tenetur voluptate excepturi
             labore odit libero repellendus eum
-            deserunt saepe! Molestiae enim repellendus nam et, pariatur perspiciatis ratione quas laborum! 
-            <a id="readMore" onclick="showContent()" style="color: blue;">Read More...</a>
-            <span id="hiddenContent" style="visibility: hidden;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci debitis tenetur voluptate excepturi
-                labore odit libero repellendus eum
-                deserunt saepe! Molestiae enim repellendus nam et, pariatur perspiciatis ratione quas
-            </span>
-        </p>
+            deserunt saepe! Molestiae enim repellendus nam et, pariatur perspiciatis ratione quas laborum!
+        <p id="hiddenContent"></p>
+        <a id="readMore" onclick="showContent()" style="color: blue;">Read More...</a>
+        </p>    
+    </div> -->
+
+    <div class="regForm">
+        <h1>Sign up</h1>
+        <form action="javascript:void(0);">
+            <div>
+                <label>First Name </label>
+                <input type="text" id="firstName" placeholder="First name" />
+            </div>
+            <div>
+                <label>Last Name</label>
+                <input type="text" id="lastName" placeholder="Last Name" />
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="text" id="email" placeholder="Email" />
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Password" />
+            </div>
+            <div>
+                <label>Gender</label>
+
+                Male<input type="radio" id="male" value="male" name="gender" value="male" checked />
+                Female<input type="radio" id="female" value="female" name="gender" value="female" />
+
+            </div>
+            <div>
+                <label>Date of Birth</label>
+                <input type="date" id="dob">
+            </div>
+            <div>
+                <button class="btnSave" onclick="addUser()">Save</button>
+            </div>
+
+
+        </form>
+        <div>
+            <h1>Registered Users</h1>
+           <table id="registeredUser">
+
+           </table>
+        </div>
     </div>
+
 
     <script src="app.js"></script>
 </body>
