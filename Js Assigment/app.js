@@ -2036,6 +2036,7 @@
 // }
 
 // Task 3
+let showStudent = document.getElementById("registeredUser");
 let studentTable = [];
 let subTable = [];
 
@@ -2054,9 +2055,6 @@ function addUser() {
 
     addToArray(firstName.value, lastName.value, email.value, dob.value, gender);
 
-    // studentTable = document.getElementById("registeredUser");
-    // let tr = document.createElement("tr");
-    // let td = document.createElement("td");
 
 }
 
@@ -2066,7 +2064,17 @@ function addToArray(firstName, lastName, email, dob, gender) {
     subTable.push(email);
     subTable.push(dob);
     subTable.push(gender);
-    studentTable.push(subTable);
-    console.log(studentTable);
+    //studentTable.push(subTable);
+    console.log(subTable);
+
+
+    
+    showStudent.innerHTML = studentsList;
+
+
+
 }
 
+function deleteUser(e) {
+    console.log(e);
+}
