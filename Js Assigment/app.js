@@ -2291,3 +2291,91 @@
 // var email = document.getElementById("email");
 // console.log(email.parentNode);
 // console.log(email.nodeType);
+
+
+
+let gender;
+let firstName = document.getElementById("firstName");
+let lastName = document.getElementById("lastName");
+let email = document.getElementById("email");
+if (document.getElementById("male").checked)
+    gender = "Male";
+else
+    gender = "Female";
+
+let dob = document.getElementById("dob");
+
+let ul = document.getElementById("registeredUsers")
+
+let saveButton = document.getElementById("btnSave");
+
+function addUser() {
+
+    //List 
+    let li = document.createElement("li");
+    let liText = document.createTextNode(firstName.value + " " + lastName.value + " " + email.value + " " + gender + " " + dob.value);
+    li.appendChild(liText);
+
+
+
+
+    // Delete Button
+    let deleteButton = document.createElement("button")
+    deleteButton.setAttribute("onclick", "deleteUser(this)");
+    let deleteText = document.createTextNode("Delete");
+    deleteButton.appendChild(deleteText);
+
+    li.appendChild(deleteButton);
+
+    // Edit Button
+
+    let editButton = document.createElement("button")
+    editButton.setAttribute("onclick", "editUser(this)");
+    let editText = document.createTextNode("Edit");
+    editButton.appendChild(editText);
+
+    li.appendChild(editButton);/*  */
+
+
+    ul.appendChild(li);
+
+    firstName.value = "";
+    lastName.value = "";
+    email.value = "";
+    dob.value = "";
+    userArray = [];
+
+}
+
+
+function deleteUser(e) {
+    e.parentNode.remove();
+}
+let checkValue;
+function editUser(e) {
+    let editValue = "";
+    checkValue = e.parentNode;
+    editValue = e.parentNode.innerText;
+    console.log(editValue.split(" ")[4].split("D")[0]);
+
+    // let editFirstName = editValue.split(" ")[0];
+    // let editLastName = editValue.split(" ")[1];
+    // let editemail = editValue.split(" ")[2];
+    // let editGender = editValue.split(" ")[3];
+    // let editDob = editValue.split(" ")[4];
+
+    firstName.value = editValue.split(" ")[0];
+    lastName.value = editValue.split(" ")[1];
+    email.value = editValue.split(" ")[2];
+    gender.value = editValue.split(" ")[3];
+    dob.value = editValue.split(" ")[4].split("D")[0];
+
+    saveButton.innerHTML = "Update";
+    saveButton.setAttribute("onclick", "updateUser()");
+
+}
+
+function updateUser() {
+    console.log(checkValue.childNodes[0]);
+    checkValue.childNodes[0] = "";
+}
