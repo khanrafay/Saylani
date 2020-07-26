@@ -41,7 +41,7 @@ function removeItem(e) {
 }
 
 function removeAll() {
-     list.children.removeAll();
+    list.innerHTML = '';
 }
 let checkValue;
 function editUser(e) {
