@@ -47,14 +47,10 @@ function removeAll() {
 
 
 function editUser(e) {
-    let editText = "";
-    editText = e.parentNode.firstChild.nodeValue;
+
+    let editText = e.parentNode.firstChild.nodeValue;
     let toBeEditText = prompt("Edit the value", editText);
-
     e.parentNode.firstChild.nodeValue = toBeEditText;
-
-
-    console.log(editText);
 
 }
 
