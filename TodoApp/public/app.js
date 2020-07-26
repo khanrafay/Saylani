@@ -43,31 +43,18 @@ function removeItem(e) {
 function removeAll() {
     list.innerHTML = '';
 }
-let checkValue;
+
+
+
 function editUser(e) {
-    let editValue = "";
-    checkValue = e.parentNode;
-    editValue = e.parentNode.innerText;
-    console.log(editValue.split(" ")[4].split("D")[0]);
+    let editText = "";
+    editText = e.parentNode.firstChild.nodeValue;
+    let toBeEditText = prompt("Edit the value", editText);
 
-    // let editFirstName = editValue.split(" ")[0];
-    // let editLastName = editValue.split(" ")[1];
-    // let editemail = editValue.split(" ")[2];
-    // let editGender = editValue.split(" ")[3];
-    // let editDob = editValue.split(" ")[4];
+    e.parentNode.firstChild.nodeValue = toBeEditText;
 
-    firstName.value = editValue.split(" ")[0];
-    lastName.value = editValue.split(" ")[1];
-    email.value = editValue.split(" ")[2];
-    gender.value = editValue.split(" ")[3];
-    dob.value = editValue.split(" ")[4].split("D")[0];
 
-    saveButton.innerHTML = "Update";
-    saveButton.setAttribute("onclick", "updateUser()");
+    console.log(editText);
 
 }
 
-function updateUser() {
-    console.log(checkValue.childNodes[0]);
-    checkValue.childNodes[0] = "";
-}
