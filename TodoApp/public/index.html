@@ -5,20 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="todoAdd">
-        <input type="text" id="txtTodo" />
-        <button id="addButton" onclick="addItem()">Add</button>
-        <button onclick="removeAll()">Remove All</button>
-    </div>
-    <div class="todoList">
-        <ul id="list">
-          
-        </ul>
-    </div>
+    <div class="app">
+        <h1>Todo List</h1>
+        <div class="todoAdd">
+            <input type="text" id="txtTodo" />
+            <button id="addButton" onclick="addItem()">Add</button>
+            <button onclick="removeAll()">Remove All</button>
+        </div>
+        <div class="todoList">
+            <ul id="list">
 
+            </ul>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 

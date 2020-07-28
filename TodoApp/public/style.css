@@ -1,0 +1,13 @@
+body {
+        background-image: linear-gradient(to right, white , green);
+       
+      }
+
+.app{
+    text-align: center;
+
+}
+
+li{
+    list-style: none;
+}

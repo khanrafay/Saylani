@@ -5,7 +5,7 @@ function addItem() {
 
     //List 
     let li = document.createElement("li");
-    let liText = document.createTextNode(item.value);
+    let liText = document.createTextNode(" " + item.value + " ");
     li.appendChild(liText);
 
 
@@ -14,7 +14,7 @@ function addItem() {
     // Delete Button
     let deleteButton = document.createElement("button")
     deleteButton.setAttribute("onclick", "removeItem(this)");
-    let deleteText = document.createTextNode("Delete");
+    let deleteText = document.createTextNode(" " + "Delete" + " ");
     deleteButton.appendChild(deleteText);
 
     li.appendChild(deleteButton);
@@ -23,7 +23,7 @@ function addItem() {
 
     let editButton = document.createElement("button")
     editButton.setAttribute("onclick", "editUser(this)");
-    let editText = document.createTextNode("Edit");
+    let editText = document.createTextNode(" " + "Edit" + " ");
     editButton.appendChild(editText);
 
     li.appendChild(editButton);/*  */
