@@ -2374,9 +2374,94 @@
 
 // function updateUser() {
 //     console.log(checkValue.childNodes[0]);
-   
+
 //     firstName.value = "";
 //     lastName.value = "";
 //     email.value = "";
 //     dob.value = "";
 // }
+
+
+
+
+let gender;
+let firstName = document.getElementById("firstName");
+let lastName = document.getElementById("lastName");
+let email = document.getElementById("email");
+if (document.getElementById("male").checked)
+    gender = "Male";
+else
+    gender = "Female";
+
+let dob = document.getElementById("dob");
+
+let ul = document.getElementById("registeredUsers")
+
+
+
+let users = [];
+
+function Users(userId, firstName, lastName, email, gender, dob) {
+    this.userId = userId;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.email = email;
+    this.gender = gender;
+    this.dob = dob;
+}
+
+
+
+userCount = 0;
+function addUser() {
+    var user = new Users(userCount, firstName.value, lastName.value, email.value, gender, dob.value);
+    users.push(user);
+    userCount++;
+    console.log(users);
+    showUsers(users);
+
+    firstName.value = "";
+    lastName.value = "";
+    email.value = "";
+    dob.value = "";
+}
+
+
+
+usersTable = document.getElementById("registeredUsers");
+function showUsers(users) {
+    usersTable.innerHTML = "";
+    for (var i = 0; i < users.length; i++) {
+        usersTable.innerHTML += `<tr>
+        <td>${users[i].firstName}</td>
+        <td>${users[i].lastName}</td>
+        <td>${users[i].email}</td>
+        <td>${users[i].gender}</td>
+        <td>${users[i].dob}</td>  
+        <td><button onClick='editUser(${users[i].userId})'>Edit</button></td> 
+        <td><button onClick='deleteUser(${users[i].userId})'>Delete</button></td> 
+        <tr>`;
+    }
+}
+
+function deleteUser(userId) {
+    console.log(userId);
+    let findUser = users.findIndex(user => user.userId === userId)
+    users.splice(findUser, 1);
+    showUsers(users);
+}
+
+let saveButton = document.getElementById("btnSave");
+function editUser(userId) {
+    console.log(userId);
+    let findUser = users.findIndex(user => user.userId === userId)
+    firstName.value = users[findUser].firstName;
+    lastName.value = users[findUser].lastName;
+    email.value = users[findUser].email;
+    gender.value = users[findUser].gender;
+    dob.value = users[findUser].dob;
+    saveButton.innerText = "Update";
+    saveButton.setAttribute(`oclick`, `updateUser(${userId})`)
+
+    showUsers(users);
+}
