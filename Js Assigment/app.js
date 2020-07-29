@@ -2465,3 +2465,7 @@ function editUser(userId) {
 
     showUsers(users);
 }
+
+function updateUser(userId) {
+  
+}
