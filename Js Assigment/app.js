@@ -2445,7 +2445,7 @@ function showUsers(users) {
 }
 
 function deleteUser(userId) {
-    console.log(userId);
+
     let findUser = users.findIndex(user => user.userId === userId)
     users.splice(findUser, 1);
     showUsers(users);
@@ -2453,7 +2453,7 @@ function deleteUser(userId) {
 
 let saveButton = document.getElementById("btnSave");
 function editUser(userId) {
-    console.log(userId);
+
     let findUser = users.findIndex(user => user.userId === userId)
     firstName.value = users[findUser].firstName;
     lastName.value = users[findUser].lastName;
@@ -2461,11 +2461,26 @@ function editUser(userId) {
     gender.value = users[findUser].gender;
     dob.value = users[findUser].dob;
     saveButton.innerText = "Update";
-    saveButton.setAttribute(`oclick`, `updateUser(${userId})`)
+    saveButton.setAttribute(`onclick`, `updateUser(${findUser})`)
 
     showUsers(users);
 }
 
 function updateUser(userId) {
-  
+    console.log(userId);
+    let findUser = users.findIndex(user => user.userId === userId)
+    firstName.value, lastName.value, email.value, gender, dob.value
+    users[findUser].firstName = firstName.value;
+    users[findUser].lastName = lastName.value;
+    users[findUser].email = email.value;
+    users[findUser].gender = gender.value;
+    users[findUser].dob = dob.value;
+
+    console.log(users);
+    showUsers(users);
+
+    firstName.value = "";
+    lastName.value = "";
+    email.value = "";
+    dob.value = "";
 }
