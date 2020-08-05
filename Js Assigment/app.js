@@ -2468,12 +2468,11 @@ function editUser(userId) {
 
 function updateUser(userId) {
     console.log(userId);
-    let findUser = users.findIndex(user => user.userId === userId)
-    firstName.value, lastName.value, email.value, gender, dob.value
+    let findUser = users.findIndex(user => user.userId === userId);
     users[findUser].firstName = firstName.value;
     users[findUser].lastName = lastName.value;
     users[findUser].email = email.value;
-    users[findUser].gender = gender.value;
+    users[findUser].gender = gender;
     users[findUser].dob = dob.value;
 
     console.log(users);
