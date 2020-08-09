@@ -1,0 +1,52 @@
+body{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.question{
+    background-color: lightblue;
+    width: 400px;
+    height: 100px;
+
+}
+
+.optionBox{
+    background-color: lightcoral;
+    width: 400px;
+    height: 300px;
+}
+
+.options:hover{
+    background-color: yellow;
+}
+
+.options {
+    list-style: none;
+}
+
+.card{
+    width:800px;
+}
+
+.centered {
+        position: absolute !important;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      
+}
+
+.centered h1{
+    text-align: center;
+}
+
+.selected{
+    background-color: yellow;
+}
+
+#lblMessage{
+    color:red;
+}
