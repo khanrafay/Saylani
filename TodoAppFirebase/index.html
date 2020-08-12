@@ -16,7 +16,27 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCINhjcSwI39ENc3c0fkG_JYMGeYcJoMMk",
+            authDomain: "todoappfirebase-bd936.firebaseapp.com",
+            databaseURL: "https://todoappfirebase-bd936.firebaseio.com",
+            projectId: "todoappfirebase-bd936",
+            storageBucket: "todoappfirebase-bd936.appspot.com",
+            messagingSenderId: "173498329972",
+            appId: "1:173498329972:web:17476a3d573de9e1b15a21"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body style="background-image: 'bg.jpg';">
@@ -25,24 +45,27 @@
             <div class="card-body">
                 <h5 class="card-title">Todo App With Firebase</h5>
                 <p class="card-text">Please add your todos.</p>
+                <div class="upper">
                 <div class="input-group input-group-sm mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="inputGroup-sizing-sm">Todo</span>
                     </div>
-                    <input type="text" class="form-control" aria-label="Sizing example input"
+                    <input id="txtItem" type="text" class="form-control" aria-label="Sizing example input"
                         aria-describedby="inputGroup-sizing-sm">
                 </div>
                 <button type="button" class="btn btn-primary" onclick="addItem()">Add</button>
                 <button type="button" class="btn btn-danger" onclick="removeAll()">Remove All</button>
             </div>
+            </div>
             <ul class="list-group list-group-flush" id="list">
-                <li class="list-group-item">Cras justo odio</li>
+               
             </ul>
 
         </div>
     </div>
 
     <script src="app.js"></script>
+
 </body>
 
 </html>

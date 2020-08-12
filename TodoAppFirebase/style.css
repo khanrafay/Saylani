@@ -1,5 +1,26 @@
+body{
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
 .todoapp{
     display: flex;
     justify-content: center;
     margin-top: 10%;
+}
+
+.card {
+    width: 29rem !important;
+}
+
+.listSpan{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns{
+    margin: 4px 5px;
 }
